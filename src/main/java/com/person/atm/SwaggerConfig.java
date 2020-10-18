@@ -27,24 +27,13 @@ public class SwaggerConfig {
                 ;
     }
 
-//    @Bean
-//    public Docket usersApi() {
-//        return new Docket(DocumentationType.SWAGGER_2)
-//                .apiInfo(usersApiInfo())
-//                .select()
-//                .paths(userPaths())
-//                .apis(RequestHandlerSelectors.any())
-//                .build()
-//                .useDefaultResponseMessages(false);
-//    }
-
     private ApiInfo getApiInfo() {
         return new ApiInfo(
-                "Order Service API",
-                "Order Service API Description",
+                "Person Service API",
+                "Person Service API Description",
                 "1.0",
-                "http://codmind.com/terms",
-                new Contact("Codmind", "https://codmind.com", "apis@codmind.com"),
+                "http://empresa.com/terms",
+                new Contact("everis", "https://empresa.com", "apis@empresa.com"),
                 "LICENSE",
                 "LICENSE URL",
                 Collections.emptyList()

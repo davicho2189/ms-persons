@@ -6,6 +6,8 @@ import com.person.atm.model.entity.Person;
 import com.person.atm.repository.dao.PersonDao;
 import io.reactivex.Single;
 import io.reactivex.schedulers.Schedulers;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
