@@ -1,8 +1,10 @@
 package com.person.atm.model.dto;
 
+import io.swagger.annotations.ApiModel;
 import lombok.*;
 import java.io.Serializable;
 
+@ApiModel("PersonResponse")
 @Getter
 @Setter
 @NoArgsConstructor
