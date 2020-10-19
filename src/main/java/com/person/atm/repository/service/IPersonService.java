@@ -5,5 +5,5 @@ import io.reactivex.Single;
 
 public interface IPersonService {
 
-    public Single<PersonResponse> findByDocument(String dni) throws Exception;
+  public Single<PersonResponse> findByDocument(String dni) throws Exception;
 }
