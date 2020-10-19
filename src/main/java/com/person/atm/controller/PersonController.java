@@ -32,7 +32,7 @@ public class PersonController {
             @ApiResponse(code = 406, message = "Error Dni incorrecto"),
             @ApiResponse(code = 404, message = "not found!!!") })
     @GetMapping("/persons/{documentNumber}")
-    public Single<PersonResponse> GetPersonInfo(
+    public Single<PersonResponse> GetPerson(
             @PathVariable String documentNumber
     ) throws Exception {
 
