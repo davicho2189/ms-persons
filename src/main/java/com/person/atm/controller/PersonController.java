@@ -44,6 +44,19 @@ public class PersonController {
     } catch (Exception ex) {
       throw ex;
     }
-
   }
+  
+  /**   
+   * ApiOperation.
+   **/
+  @ApiOperation(value = "actualiza el persona por huella", response = PersonResponse.class)
+  @ApiResponses(value = { @ApiResponse(code = 200, message = "Success|OK"),
+      @ApiResponse(code = 400, message = "Error al actualizar")})
+  @GetMapping("/persons/updateFingerPerson/{id}")
+  public void updateFingerPerson(@PathVariable Long id) throws Exception {
+    
+    personService.updatePersonFingerprint(id);
+     
+  }
+  
 }

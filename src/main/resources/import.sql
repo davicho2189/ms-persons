@@ -1,4 +1,4 @@
-insert into person(id,name_person,document,finger_print,black_list) values (1,'cesar guerrero hidalgo','46181585',true,false);
+insert into person(id,name_person,document,finger_print,black_list) values (1,'cesar guerrero hidalgo','46181585',false,false);
 insert into person(id,name_person,document,finger_print,black_list) values (2,'jhon  doe','00217095',true,false);
 insert into person(id,name_person,document,finger_print,black_list) values (3,'julieta venegas','20145257',true,false);
 insert into person(id,name_person,document,finger_print,black_list) values (4,'isa moreno','46151857',true,false);
