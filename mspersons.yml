@@ -1,0 +1,42 @@
+#Definir pod
+apiVersion: apps/v1
+kind: deployment
+metadata:
+  name: mspersons
+  labels:
+    app: mspersons
+  spec:
+    replicas: 1
+    selector:
+      matchLabels:
+        app: mspersons
+        template:
+        metadata:
+        labels:
+          app: mspersons
+          spec:
+          containers:
+          name: mspersons
+          image: 123
+
+          resources:
+          requests:
+          memory: "256Mi"
+          cpu: "250m"
+          limits:
+            memory: "512Mi"
+            cpu: "500m"
+    imagePullSecrets:
+      name: regcred
+      ##################
+    kind :  Service
+    apiVersion: v1   
+    metadata:
+      name: mspersons
+    spec:
+      selector:
+        app: mspersons
+      ports:
+      - port: 80
+        targetPort: <Target Port>
+    
